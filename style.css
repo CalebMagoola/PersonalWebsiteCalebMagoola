@@ -1,0 +1,260 @@
+/*This is the reset stylesheet code from http://html5doctor.com/html-5-reset-stylesheet/*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/********************************************************************
+This is my styling underneath
+********************************************************************/
+
+h1{
+    font-size: 100px;
+    float: none;
+    font: normal;
+    text-align: left;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    margin: 0%;
+    
+}
+h3{
+    font-size: 20px;
+    text-align: left;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    margin: 0%;  
+}
+p{
+    font-size: 20px;
+    margin: 0%;
+    text-indent: 10%;
+       
+}
+body{
+  background: url(img/MountainRange.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bigbox{
+    position: relative;
+    left: 276px;
+    align-self: center;
+    justify-self: center;
+    width: 900px;
+    display: grid;
+    column-gap: 80px;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(2, 450px);
+}
+.box{
+    width: 450px;
+    background: rgba(0,0,0, 0.5);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.box > .box-image{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.bigbox > .box > .box-image{
+    border-radius: 10%;
+    height: 600px;
+    width: 450px;
+}
+.bigbox > .box > .boxy-image{
+    border-radius: 10%;
+    height: 300px;
+    width: 225px;
+}
+.bigbox > .box > .bulletin-image{
+    border-radius: 10%;
+    height: 337.5px;
+    width: 450px;
+}
+.box > .business{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.box > .page-name{
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
+}
+.box > .home-statement{
+    font-size: 40px;
+    text-align: center;
+    font-style: bold;
+    font-weight: 200;
+}
+.box > p{
+    text-align: left;
+    text-overflow: clip;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background: rgba(255,255,255, 0.5);
+    text-align: center;
+}
+/*moves the entire navigation*/
+ul{
+    height: 0;
+}
+/*moves the individual links*/
+ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;  
+}
+/*styles the links themselves*/
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e1e1e;
+    padding: 0 20px;
+    display: block;
+}
+ul li a:hover{
+    color:rgba(255,255,255);
+    font-style: oblique;
+    font: bold;
+    font-size: larger;
+    background-color: rgba(0,0,0, 0.5);
+}
+.p-contact{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e1e1e;
+    padding: 0 20px;
+}
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+.icon{
+    color: white;
+    transition: color 0.2s;
+    position: relative;
+    margin: 0 2px;
+    height: 100px;
+    width: 100px;
+}
+.icon:hover{
+    color: gray;
+}
+.project-icon{
+    color: white;
+    transition: color 0.2s;
+}
+.project-icon:hover{
+    color: gray;
+}
