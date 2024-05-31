@@ -133,18 +133,13 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
+.bigbox:after{
+    content: "";
+    display: table;
+    clear: both;
+}
 .bigbox{
-    position: relative;
-    left: 276px;
-    align-self: center;
-    justify-self: center;
-    width: 900px;
-    display: grid;
-    column-gap: 80px;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(2, 450px);
+    display: flex;
 }
 .box{
     width: 450px;
@@ -156,6 +151,7 @@ body{
     margin-bottom: 5%;
     color: white;
     font-family: 'Times New Roman', Times, serif;
+    flex: 50%;
 }
 .box > .box-image{
     border-radius: 50%;
